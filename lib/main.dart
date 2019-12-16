@@ -72,9 +72,8 @@ Future<News> news;
                   },
                 );
               } else if (snapshot.hasError) {
-                return Text("${snapshot.error}");
+                return Center(child: Container(child: Text("${snapshot.error}")));
               }
-
               // By default, show a loading spinner.
               return SpinKitHourGlass(color: Colors.red, size: 30,);
             },
