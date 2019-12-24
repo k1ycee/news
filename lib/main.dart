@@ -25,6 +25,7 @@ Future<News> news;
   void initState() {
     super.initState();
     news = getNews();
+    
   }
 
   @override
